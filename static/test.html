@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+  <style type="text/css">
+    input{
+      width: 100%;
+      height: 50px;
+      background-color: darkgreen;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+    }
+    .lo{
+      width: 300px;
+      height: 50px;
+      background-color: darkcyan;
+      text-align: center;
+      line-height: 50px;
+    }
+    .xxx{
+      width: 50px;
+      height: 1000px;
+      background-color: darkgrey;
+    }
+  </style>
+</head>
+
+<body>
+<div class="lo">点这里</div>
+<div class="xxx"></div>
+<input type="text" id="txt" />
+<div id="dv"></div>
+<script>
+  //          var timer, windowInnerHeight;
+  //
+  //          function eventCheck(e) {
+  //              if(e) { //blur,focus事件触发的
+  //
+  //                  $('#dv').html('android键盘' + (e.type == 'focus' ? '弹出' : '隐藏') + '--通过' + e.type + '事件');
+  //                  if(e.type == 'click') { //如果是点击事件启动计时器监控是否点击了键盘上的隐藏键盘按钮，没有点击这个按钮的事件可用，keydown中也获取不到keyCode值
+  //                      setTimeout(function() { //由于键盘弹出是有动画效果的，要获取完全弹出的窗口高度，使用了计时器
+  //                          windowInnerHeight = window.innerHeight; //获取弹出android软键盘后的窗口高度
+  //                          timer = setInterval(function() {
+  //                              eventCheck()
+  //                          }, 100);
+  //                      }, 500);
+  //                  } else clearInterval(timer);
+  //              } else { //计时器执行的，需要判断窗口可视高度，如果改变说明android键盘隐藏了
+  //                  if(window.innerHeight > windowInnerHeight) {
+  //                      clearInterval(timer);
+  //                      $('#dv').html('android键盘隐藏--通过点击键盘隐藏按钮');
+  //                  }
+  //              }
+  //          }
+  //          $('#txt').click(eventCheck).blur(eventCheck);
+
+
+  $(".lo").click(function(){
+    $("#txt").css({position:"relative"})
+    $("#txt").focus();
+    /*setTimeout(function(){
+        target.scrollIntoViewIfNeeded();
+        //target.scrollIntoView(true);
+        console.log('scrollIntoViewIfNeeded');
+    },00);*/
+  })
+
+  $('input[type="text"],textarea').on('focus', function () {
+
+    var target = this;
+    setTimeout(function(){
+      target.scrollIntoViewIfNeeded();
+      //target.scrollIntoView(true);
+      console.log('scrollIntoViewIfNeeded');
+    },200);
+  });
+
+
+
+
+
+
+
+
+
+  /*
+  var clientHeight = document.body.clientHeight;
+  var _focusElem = null; //输入框焦点
+  //利用捕获事件监听输入框等focus动作
+  document.body.addEventListener("focus", function(e) {
+      _focusElem = e.target || e.srcElement;
+     console.log(111)
+  }, true);
+  //因为存在软键盘显示而屏幕大小还没被改变，所以以窗体（屏幕显示）大小改变为准
+  window.addEventListener("resize", function() {
+      alert(222)
+      setTimeout(function(){
+          _focusElem.scrollIntoViewIfNeeded();
+          //console.log('scrollIntoViewIfNeeded');
+      },200);
+          //焦点元素滚动到可视范围的底部(false为底部)
+     // _focusElem.scrollIntoView(true);
+
+  });*/
+
+  //          setTimeout(function(){
+  //              target.scrollIntoViewIfNeeded();
+  //              console.log('scrollIntoViewIfNeeded');
+  //          },200);
+  //
+
+
+</script>
+
+</body>
+
+</html>

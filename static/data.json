@@ -1,0 +1,112 @@
+{
+  "code": 0,
+  "msg": "ok",
+  "result": {
+    "_text": "在E-process中，为专家付款时支持件提供不完整",
+    "msg_id": "ce9a5ac1-3ef2-44e1-8531-488dd3db548e",
+    "intents": [
+      {
+        "parameters": {
+          "q": "在E-process中，为专家付款时支持件提供不完整",
+          "any": "在e-process中为专家付款时支持件提供不完整"
+        },
+        "action": "合并接口",
+        "name": "4.模糊搜索（设置一个值合并接口）",
+        "result": {
+          "code": 200,
+          "response": {
+            "filter": false,
+            "replies": [],
+            "kbqa": {
+              "id": "8ddc6eeec17c7645b5539d6eb5765252",
+              "title": "常犯错误",
+              "query": "在E-process中，为专家付款时支持件提供不完整",
+              "shortText": "",
+              "longText": "① 劳务协议清晰扫描件\n② 签到表\n③ 照片",
+              "html": "",
+              "jpg": "",
+              "pdf": "",
+              "mp4": "",
+              "keyword": [],
+              "simQsameA": [],
+              "drugName": "",
+              "topic": "E-Process",
+              "category": "",
+              "field": "policy",
+              "docTag": [
+                "Eprocess"
+              ],
+              "sourceSection": "rst",
+              "clickCount": 0,
+              "upCount": 0,
+              "downCount": 0,
+              "upOrDownReplay": null,
+              "matchScore": 1.3905057907104492
+            },
+            "similarQuestions": [
+              "E-process上传支持件，不按照类目进行上传",
+              "E-process中分期付款与是否预付不会选择",
+              "E-Process系统上传付款支持件发生退单的处理—支持件问题",
+              "E-Process系统上传付款支持件发生退单的处理—Ariba前端问题",
+              "如何正确填写专家账户申请表和提交完整支持件？",
+              "如何正确填写PR申请表和提交完整支持件,与HCC相关的PR申请？",
+              "如何查询专家劳务未付款原因？退单如何处理？"
+            ],
+            "maxScore": 1.001
+          },
+          "type": "undefined"
+        },
+        "outputs": [
+          {
+            "type": "answerCard",
+            "contents": [
+              {
+                "property": {
+                  "title": "在E-process中，为专家付款时支持件提供不完整",
+                  "id": "8ddc6eeec17c7645b5539d6eb5765252",
+                  "shortText": "",
+                  "longText": "① 劳务协议清晰扫描件\n② 签到表\n③ 照片",
+                  "html": "",
+                  "pdf": "",
+                  "jpg": "",
+                  "mp4": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "simQdiffA",
+            "property": {
+              "title": "相似问题",
+              "contents": [
+                "E-process上传支持件，不按照类目进行上传",
+                "E-process中分期付款与是否预付不会选择",
+                "E-Process系统上传付款支持件发生退单的处理—支持件问题",
+                "E-Process系统上传付款支持件发生退单的处理—Ariba前端问题",
+                "如何正确填写专家账户申请表和提交完整支持件？",
+                "如何正确填写PR申请表和提交完整支持件,与HCC相关的PR申请？",
+                "如何查询专家劳务未付款原因？退单如何处理？"
+              ]
+            }
+          },
+          "undefined",
+          {
+            "type": "quick_replies",
+            "payload": {
+              "text": "",
+              "replies": [
+                "咨询其他问题"
+              ]
+            }
+          }
+        ],
+        "score": "1.0",
+        "scoreColor": "c4",
+        "is_match": 1,
+        "skill_id": "e43a9f9d-c2ba-4ff1-81bc-6bdbcc61b916",
+        "id": "7a872f75-d674-4724-86ec-d8cc80f0ec0b"
+      }
+    ],
+    "meta_process_milliseconds": 417
+  }
+}
