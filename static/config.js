@@ -1,11 +1,13 @@
 const janssenApi = 'http://janssenprod.vinfol.com/adapter/janssen';
 const ruyiApi = 'http://janssenprod.vinfol.com/ruyi-api/v1';
+const ruyiOriApi = 'http://api.ruyi.ai//v1';
+
 const dominName = 'http://janssenprod.vinfol.com';
 
 const API = {
     recommendByUserLabel: janssenApi + '/v2/recommendByUserLabel',
     hotQuestion: janssenApi + '/v2/hotQuestion',
-    message: ruyiApi + '/message',
+    message: ruyiOriApi + '/message',
     recommendByQuery: janssenApi + '/v2/recommendByQuery',
 }
 let userData = {
