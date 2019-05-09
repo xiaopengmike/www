@@ -11,7 +11,7 @@ const API = {
     recommendByQuery: janssenApi + '/v2/recommendByQuery',
 }
 let userData = {
-    app_key: '19f63523-1ff7-45df-9830-2a62873c8af3',
+    app_key: 'eeab85e7-c977-421d-a097-00d25b263bbd',
     user_id:1,
     wwid: ''
 }
