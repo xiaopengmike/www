@@ -1,8 +1,8 @@
-const janssenApi = 'http://anssen.ruyi.ai/adapter/janssen';
-const ruyiApi = 'http://anssen.ruyi.ai/ruyi-api/v1';
+const janssenApi = 'http://janssen.ruyi.ai/adapter/janssen';
+const ruyiApi = 'http://janssen.ruyi.ai/ruyi-api/v1';
 const ruyiOriApi = 'http://api.ruyi.ai//v1';
 
-const dominName = 'http://anssen.ruyi.ai';
+const dominName = 'http://janssen.ruyi.ai';
 
 const API = {
     recommendByUserLabel: janssenApi + '/v2/recommendByUserLabel',
