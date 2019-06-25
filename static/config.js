@@ -9,6 +9,7 @@ const API = {
     hotQuestion: janssenApi + '/v2/hotQuestion',
     message: ruyiOriApi + '/message',
     recommendByQuery: janssenApi + '/v2/recommendByQuery',
+    signDisclaimer: janssenApi + '/v2/signDisclaimer',
 }
 let userData = {
   app_key: 'eeab85e7-c977-421d-a097-00d25b263bbd',
